@@ -1,0 +1,57 @@
+{
+  "version" : "-1",
+  "constants" : { },
+  "specialConstants" : { },
+  "salt" : "bgcolortst",
+  "rule" : null,
+  "buckets" : [ {
+    "name" : "inactive",
+    "value" : -1,
+    "description" : "Inactive",
+    "payload" : {
+      "stringValue" : "#C0C0C0"
+    }
+  }, {
+    "name" : "control",
+    "value" : 0,
+    "description" : "Control (grey)",
+    "payload" : {
+      "stringValue" : "#C0C0C0"
+    }
+  }, {
+    "name" : "blue",
+    "value" : 1,
+    "description" : "Royal blue",
+    "payload" : {
+      "stringValue" : "#2B60DE"
+    }
+  }, {
+    "name" : "green",
+    "value" : 2,
+    "description" : "Neon green",
+    "payload" : {
+      "stringValue" : "#3DFF33"
+    }
+  } ],
+  "allocations" : [ {
+    "rule" : null,
+    "ranges" : [ {
+      "bucketValue" : -1,
+      "length" : 0.0
+    }, {
+      "bucketValue" : 1,
+      "length" : 0.3
+    }, {
+      "bucketValue" : 0,
+      "length" : 0.4
+    }, {
+      "bucketValue" : 2,
+      "length" : 0.3
+    } ],
+    "id" : "#A1"
+  } ],
+  "silent" : false,
+  "metaTags" : [ ],
+  "testType" : "USER",
+  "description" : "Test background color"
+}
