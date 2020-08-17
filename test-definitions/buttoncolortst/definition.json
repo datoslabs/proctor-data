@@ -1,0 +1,65 @@
+{
+  "version" : "-1",
+  "constants" : { },
+  "specialConstants" : { },
+  "salt" : "buttoncolortst",
+  "rule" : null,
+  "buckets" : [ {
+    "name" : "inactive",
+    "value" : -1,
+    "description" : "the inactive case",
+    "payload" : {
+      "map" : {
+        "stringValue" : "#C0C0C0"
+      }
+    }
+  }, {
+    "name" : "control",
+    "value" : 0,
+    "description" : "the control case (stays grey)",
+    "payload" : {
+      "map" : {
+        "stringValue" : "#C0C0C0"
+      }
+    }
+  }, {
+    "name" : "blue",
+    "value" : 1,
+    "description" : "royal blue",
+    "payload" : {
+      "map" : {
+        "stringValue" : "#2B60DE"
+      }
+    }
+  }, {
+    "name" : "green",
+    "value" : 2,
+    "description" : "neon green to really get the user's attention",
+    "payload" : {
+      "map" : {
+        "stringValue" : "#3DFF33"
+      }
+    }
+  } ],
+  "allocations" : [ {
+    "rule" : null,
+    "ranges" : [ {
+      "bucketValue" : -1,
+      "length" : 0.0
+    }, {
+      "bucketValue" : 1,
+      "length" : 0.3
+    }, {
+      "bucketValue" : 0,
+      "length" : 0.4
+    }, {
+      "bucketValue" : 2,
+      "length" : 0.3
+    } ],
+    "id" : "#A1"
+  } ],
+  "silent" : false,
+  "metaTags" : [ ],
+  "testType" : "USER",
+  "description" : "Test which button color has a higher click-through."
+}
